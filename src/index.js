@@ -1,12 +1,8 @@
+import addTodo from './modules/addTodo.js';
+import displayTodos from './modules/displayTodos.js';
+import pageLayout from './modules/pageLayout.js';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = 'Hello what is goning on ';
-
-  return element;
-}
-
-document.body.appendChild(component());
+pageLayout();
+addTodo();
+displayTodos();
