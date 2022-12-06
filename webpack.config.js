@@ -16,6 +16,8 @@ module.exports = {
   },
   mode: 'development',
   devServer: {
+    watchFiles: ['src/*.*'],
+    hot: true,
     static: './dist',
   },
   module: {
